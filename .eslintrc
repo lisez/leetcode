@@ -1,0 +1,90 @@
+{
+  "extends": "airbnb-base",
+  "plugins": [],
+  "env": {
+    "node": true,
+    "mocha": true
+  },
+  "rules": {
+    "no-useless-escape": 0,
+    "max-len": [
+      "error",
+      100,
+      {
+        "ignoreComments": true,
+        "ignoreTrailingComments": true
+      }
+    ],
+    "no-multi-spaces": [
+      0,
+      {
+        "exceptions": {
+          "VariableDeclarator": true
+        }
+      }
+    ],
+    "object-curly-spacing": 0,
+    "no-console": [
+      "error",
+      {
+        "allow": [
+          "info",
+          "warn",
+          "error"
+        ]
+      }
+    ],
+    "no-param-reassign": [
+      "error",
+      {
+        "props": false
+      }
+    ],
+    "key-spacing": [
+      2,
+      {
+        "singleLine": {
+          "beforeColon": false,
+          "afterColon": true
+        },
+        "multiLine": {
+          "beforeColon": false,
+          "afterColon": true,
+          "align": "value"
+        }
+      }
+    ],
+    "no-control-regex": 0,
+    "no-underscore-dangle": [
+      "error",
+      {
+        "allow": [
+          "_id",
+          "_type"
+        ]
+      }
+    ],
+    "no-plusplus": [
+      "error",
+      {
+        "allowForLoopAfterthoughts": true
+      }
+    ],
+    "no-restricted-syntax": [
+      "error",
+      "ForInStatement",
+      "LabeledStatement",
+      "WithStatement"
+    ],
+    "comma-dangle": [
+      "error",
+      "only-multiline"
+    ],
+    "no-await-in-loop": [
+      0
+    ],
+    "import/no-extraneous-dependencies": [
+      0
+    ]
+  }
+}
