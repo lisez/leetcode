@@ -4,88 +4,29 @@ function isValidWord(word: string): boolean {
   let closeHyphen = false;
   let hasChar = false;
   for (let i = 0; i < word.length; i += 1) {
-    switch (word[i]) {
-      case "-": {
+    const w = word[i];
+    switch (true) {
+      case w === "-": {
         if (i === 0 || i === word.length - 1) return false;
         if (hasHyphen) return false;
         hasHyphen = true;
         break;
       }
 
-      case "!":
-      case "?":
-      case ".":
-      case ",": {
+      case w === "!":
+      case w === "?":
+      case w === ".":
+      case w === ",": {
         if (word.length === 1) return true;
         if (i < word.length - 1) return false;
         if (!hasChar) return false;
         break;
       }
 
-      case "0":
-      case "1":
-      case "2":
-      case "3":
-      case "4":
-      case "5":
-      case "6":
-      case "7":
-      case "8":
-      case "9":
-      case "A":
-      case "B":
-      case "C":
-      case "D":
-      case "E":
-      case "F":
-      case "G":
-      case "H":
-      case "I":
-      case "J":
-      case "K":
-      case "L":
-      case "M":
-      case "N":
-      case "O":
-      case "P":
-      case "Q":
-      case "R":
-      case "S":
-      case "T":
-      case "U":
-      case "V":
-      case "W":
-      case "X":
-      case "Y":
-      case "Z":
+      case /[A-Z\d]/.test(w):
         return false;
 
-      case "a":
-      case "b":
-      case "c":
-      case "d":
-      case "e":
-      case "f":
-      case "g":
-      case "h":
-      case "i":
-      case "j":
-      case "k":
-      case "l":
-      case "m":
-      case "n":
-      case "o":
-      case "p":
-      case "q":
-      case "r":
-      case "s":
-      case "t":
-      case "u":
-      case "v":
-      case "w":
-      case "x":
-      case "y":
-      case "z": {
+      case /[a-z]/.test(w): {
         hasChar = true;
         if (hasHyphen && !closeHyphen) closeHyphen = true;
         break;
@@ -105,8 +46,11 @@ export function countValidWords(sentence: string): number {
   let word = "";
   for (const w of sentence) {
     if (w === " ") {
-      const isValid = isValidWord(word);
-      count += isValid ? 1 : 0;
+      const trimmedWord = word.trim();
+      if (trimmedWord) {
+        const isValid = isValidWord(trimmedWord);
+        count += isValid ? 1 : 0;
+      }
       word = "";
     } else {
       word += w;
