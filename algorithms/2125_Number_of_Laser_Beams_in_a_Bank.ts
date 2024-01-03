@@ -8,42 +8,24 @@ function countBank(bank: string): number {
   return count;
 }
 
+function toNumbers(bank: string[]): number[] {
+  const result: number[] = [];
+  for (let i = 0; i < bank.length; i += 1) {
+    const count = countBank(bank[i]);
+    if (count) result.push(count);
+  }
+  return result;
+}
+
 export function numberOfBeams(bank: string[]): number {
   if (bank.length <= 1) return 0;
 
+  const numbers = toNumbers(bank);
+  if (numbers.length <= 1) return 0;
+
   let count = 0;
-  let left = 0;
-  let right = 1;
-  while (right < bank.length) {
-    const leftCount = countBank(bank[left]);
-    const rightCount = countBank(bank[right]);
-
-    switch (true) {
-      case leftCount === 0 && rightCount > 0: {
-        left = right;
-        right += 1;
-        break;
-      }
-
-      case rightCount === 0 && leftCount > 0: {
-        right += 1;
-        break;
-      }
-
-      case leftCount > 0 && rightCount > 0: {
-        count += leftCount * rightCount;
-        left = right;
-        right += 1;
-        break;
-      }
-
-      case leftCount === 0 && rightCount === 0:
-      default: {
-        left += 1;
-        right += 1;
-        break;
-      }
-    }
+  for (let i = 0; i < numbers.length - 1; i += 1) {
+    count += numbers[i] * numbers[i + 1];
   }
 
   return count;
