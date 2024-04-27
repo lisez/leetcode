@@ -1,16 +1,20 @@
-name: update readme
+name: auto format code
 on:
   push:
     branches:
       - develop
+
 jobs:
-  update-readme:
-    name: Update README
+  deno-fmt:
+    name: Deno fmt
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: update readme
-        run: bash scripts/update_readme.sh;
+      - uses: denoland/setup-deno@v1
+      - name: Deno fmt
+        with:
+          deno-version: v1.x
+      - run: deno fmt
       - name: commit changes
         run: |
           if [[ `git status --porcelain` ]]; then
