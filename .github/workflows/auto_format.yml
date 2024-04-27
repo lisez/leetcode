@@ -23,6 +23,11 @@ jobs:
           else
             echo "No changes to commit";
           fi
+  update-readme:
+    name: Update README
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
       - name: update readme
         run: bash scripts/update_readme.sh;
       - name: commit readme changes
