@@ -14,8 +14,19 @@ jobs:
       - name: Deno fmt
         with:
           deno-version: v1.x
-      - run: deno fmt
-      - name: commit changes
+        run: deno fmt
+      - name: commit code chagnes
+        run: |
+          if [[ `git status --porcelain` ]]; then
+            git config --local user.email "action@github.com";
+            git config --local user.name "GitHub Action";
+            git add . -A && git commit -m "chore: auto format" && git push origin;
+          else
+            echo "No changes to commit";
+          fi
+      - name: update readme
+        run: bash scripts/update_readme.sh;
+      - name: commit readme changes
         run: |
           if [[ `git status --porcelain` ]]; then
             git config --local user.email "action@github.com";
