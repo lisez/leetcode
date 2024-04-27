@@ -18,4 +18,3 @@ export function minDifficulty(jobDifficulty: number[], d: number): number {
   }
   return dp[n][d];
 }
-

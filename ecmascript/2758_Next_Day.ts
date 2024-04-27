@@ -7,9 +7,11 @@ declare global {
 Date.prototype.nextDay = function (): string {
   const oneDayMs = 86400000;
   const nextDate = new Date(+this + oneDayMs);
-  return `${nextDate.getFullYear()}-${(nextDate.getMonth() + 1)
-    .toString()
-    .padStart(2, "0")}-${nextDate.getDate().toString().padStart(2, "0")}`;
+  return `${nextDate.getFullYear()}-${
+    (nextDate.getMonth() + 1)
+      .toString()
+      .padStart(2, "0")
+  }-${nextDate.getDate().toString().padStart(2, "0")}`;
 };
 
 /**

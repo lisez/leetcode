@@ -3,13 +3,13 @@
  */
 
 const parentheses = {
-  ')': '(',
-  '}': '{',
-  ']': '[',
+  ")": "(",
+  "}": "{",
+  "]": "[",
 };
 
 const right = Object.keys(parentheses);
-const left  = right.map(el => parentheses[el]);
+const left = right.map((el) => parentheses[el]);
 
 /**
  * @param {string} s

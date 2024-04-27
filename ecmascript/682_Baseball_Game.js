@@ -3,7 +3,7 @@
  * @return {number}
  */
 const calPoints = (ops) => {
-  const stack  = [];
+  const stack = [];
   const cancel = () => stack.pop() * -1;
   const double = () => {
     stack.push(stack[stack.length - 1] * 2);
@@ -17,9 +17,9 @@ const calPoints = (ops) => {
     return score;
   };
   const cmd = {
-    D:   double,
-    C:   cancel,
-    '+': plus,
+    D: double,
+    C: cancel,
+    "+": plus,
   };
   return ops.reduce((amount, curr) => {
     if (cmd[curr] === undefined) {
@@ -30,5 +30,5 @@ const calPoints = (ops) => {
   }, 0);
 };
 
-console.info(calPoints(['5', '2', 'C', 'D', '+']));
-console.info(calPoints(['5', '-2', '4', 'C', 'D', '9', '+', '+']));
+console.info(calPoints(["5", "2", "C", "D", "+"]));
+console.info(calPoints(["5", "-2", "4", "C", "D", "9", "+", "+"]));
