@@ -11,11 +11,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: denoland/setup-deno@v1
-      - name: Deno fmt
         with:
           deno-version: v1.x
-        run: deno fmt
-      - name: commit code chagnes
+      - run: deno fmt
+      - name: commit code changes
         run: |
           if [[ `git status --porcelain` ]]; then
             git config --local user.email "action@github.com";
