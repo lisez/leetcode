@@ -121,6 +121,7 @@
 - [682_Baseball_Game](ecmascript/682_Baseball_Game.js)
 - [804_Unique_Morse_Code_Words](ecmascript/804_Unique_Morse_Code_Words.ts)
 - [821_Shortest_Distance_to_a_Character](ecmascript/821_Shortest_Distance_to_a_Character.ts)
+- [824_Goat_Latin](ecmascript/824_Goat_Latin.ts)
 - [91_Decode_Ways](ecmascript/91_Decode_Ways.ts)
 - [942_DI_String_Match](ecmascript/942_DI_String_Match.ts)
 - [944_Delete_Columns_to_Make_Sorted](ecmascript/944_Delete_Columns_to_Make_Sorted.ts)
