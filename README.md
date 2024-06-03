@@ -121,6 +121,7 @@
 - [661_Image_Smoother](ecmascript/661_Image_Smoother.ts)
 - [682_Baseball_Game](ecmascript/682_Baseball_Game.js)
 - [804_Unique_Morse_Code_Words](ecmascript/804_Unique_Morse_Code_Words.ts)
+- [806_Number_of_Lines_To_Write_String](ecmascript/806_Number_of_Lines_To_Write_String.ts)
 - [821_Shortest_Distance_to_a_Character](ecmascript/821_Shortest_Distance_to_a_Character.ts)
 - [824_Goat_Latin](ecmascript/824_Goat_Latin.ts)
 - [91_Decode_Ways](ecmascript/91_Decode_Ways.ts)
