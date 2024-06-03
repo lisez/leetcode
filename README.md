@@ -110,6 +110,7 @@
 - [2_Add_Two_Numbers](ecmascript/2_Add_Two_Numbers.js)
 - [3019_Number_of_Changing_Keys](ecmascript/3019_Number_of_Changing_Keys.ts)
 - [3110_Score_of_a_String](ecmascript/3110_Score_of_a_String.ts)
+- [3146_Permutation_Difference_between_Two_Strings](ecmascript/3146_Permutation_Difference_between_Two_Strings.ts)
 - [39_Combination_Sum](ecmascript/39_Combination_Sum.js)
 - [412_Fizz_Buzz](ecmascript/412_Fizz_Buzz.js)
 - [455_Assign_Cookies](ecmascript/455_Assign_Cookies.ts)
