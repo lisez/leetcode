@@ -128,6 +128,7 @@
 - [806_Number_of_Lines_To_Write_String](ecmascript/806_Number_of_Lines_To_Write_String.ts)
 - [821_Shortest_Distance_to_a_Character](ecmascript/821_Shortest_Distance_to_a_Character.ts)
 - [824_Goat_Latin](ecmascript/824_Goat_Latin.ts)
+- [884_Uncommon_Words_from_Two_Sentences](ecmascript/884_Uncommon_Words_from_Two_Sentences.ts)
 - [91_Decode_Ways](ecmascript/91_Decode_Ways.ts)
 - [942_DI_String_Match](ecmascript/942_DI_String_Match.ts)
 - [944_Delete_Columns_to_Make_Sorted](ecmascript/944_Delete_Columns_to_Make_Sorted.ts)
