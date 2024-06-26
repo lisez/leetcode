@@ -43,6 +43,7 @@
 - [1812_Determine_Color_of_a_Chessboard_Square](ecmascript/1812_Determine_Color_of_a_Chessboard_Square.ts)
 - [1816_Truncate_Sentence](ecmascript/1816_Truncate_Sentence.ts)
 - [1844_Replace_All_Digits_with_Characters](ecmascript/1844_Replace_All_Digits_with_Characters.ts)
+- [1869_Longer_Contiguous_Segments_of_Ones_than_Zeros](ecmascript/1869_Longer_Contiguous_Segments_of_Ones_than_Zeros.ts)
 - [1876_Substrings_of_Size_Three_with_Distinct_Characters](ecmascript/1876_Substrings_of_Size_Three_with_Distinct_Characters.ts)
 - [1880_Check_if_Word_Equals_Summation_of_Two_Words](ecmascript/1880_Check_if_Word_Equals_Summation_of_Two_Words.ts)
 - [1897_Redistribute_Characters_to_Make_All_Strings_Equal](ecmascript/1897_Redistribute_Characters_to_Make_All_Strings_Equal.ts)
