@@ -94,6 +94,7 @@
 - [2619_Array_Prototype_Last](ecmascript/2619_Array_Prototype_Last.ts)
 - [2620_Counter](ecmascript/2620_Counter.ts)
 - [2621_Sleep](ecmascript/2621_Sleep.ts)
+- [2623_Memoize](ecmascript/2623_Memoize.ts)
 - [2626_Array_Reduce_Transformation](ecmascript/2626_Array_Reduce_Transformation.ts)
 - [2629_Function_Composition](ecmascript/2629_Function_Composition.ts)
 - [2634_Filter_Elements_from_Array](ecmascript/2634_Filter_Elements_from_Array.ts)
