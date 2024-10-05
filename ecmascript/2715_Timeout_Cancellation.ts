@@ -8,13 +8,10 @@ type JSONValue =
 type Fn = (...args: JSONValue[]) => void;
 
 export function cancellable(fn: Fn, args: JSONValue[], t: number): Function {
-  let cancelled = false;
-  setTimeout(() => {
-    if (!cancelled) {
-      fn(...args);
-    }
-  }, t);
-  return () => (cancelled = true);
+  const timer = setTimeout(() => fn(...args), t);
+  return () => {
+    clearTimeout(timer);
+  };
 }
 
 /**
